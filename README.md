@@ -11,7 +11,7 @@ The purpose of this lab is to practice Asynchronous JavaScript concepts discusse
 1. Create a function that takes a string message as an argument, and logs that message to the console
 2. Now call your function with a message
 3. Use ``setTimeout`` to call your function again, but with a different message and after 2 seconds
-    * **Hint**: If you both of your messages log at the same time, look at the [syntax of a ``setTimeout``](https://www.w3schools.com/jsref/met_win_settimeout.asp). You'll need to call your function within an anonymous function the timeOut executes.
+    * **Hint**: If both of your messages log at the same time, look at the [syntax of a ``setTimeout``](https://www.w3schools.com/jsref/met_win_settimeout.asp). You'll need to call your function within an anonymous function the timeOut executes.
 4. Create a new function called ``getWords`` that will attempt to do the following using several ``setTimeout`` calls:
     * Log a word instantly
     * After 3 seconds, log another word
