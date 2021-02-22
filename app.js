@@ -9,16 +9,20 @@ stringMessage2 = () => {
 };
 
 getWords = () => {
+    // Log a word instantly
     console.log("Word One");
 
+    // After 3 seconds, log another word
     setTimeout(() => {
         console.log("Word Two")
     }, 3000);
 
+    // 2 secs after that, log a third word
     setTimeout(() => {
         console.log("Word Three")
     }, 5000);
 
+    // Finally 1 second after the 3rd word, log a final word
     setTimeout(() => {
         console.log("Final Word")
     }, 6000);
