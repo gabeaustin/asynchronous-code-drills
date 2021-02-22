@@ -1,7 +1,12 @@
-function stringMessage(msg) {
-    setTimeout(() => {
-        console.log(msg);
-    }, 2000);
-}
+stringMessage1 = (msg1) => {
+    console.log(msg1);
+};
 
-stringMessage("It's time to level up!");
+function stringMessage2() {
+    setTimeout(() => {
+        console.log("It's time to party!")
+    }, 2000);
+};
+
+stringMessage1("What time is it...");
+stringMessage2();
