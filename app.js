@@ -2,13 +2,13 @@ stringMessage1 = (msg1) => {
     console.log(msg1);
 };
 
-function stringMessage2() {
+stringMessage2 = () => {
     setTimeout(() => {
         console.log("It's time to party!")
     }, 2000);
 };
 
-function getWords() {
+getWords = () => {
     console.log("Word One");
 
     setTimeout(() => {
@@ -22,6 +22,14 @@ function getWords() {
     setTimeout(() => {
         console.log("Final Word")
     }, 6000);
+};
+
+done = () => {
+    console.log("Job's done!");
+}
+
+countdown = (num, callback) => {
+
 }
 
 stringMessage1("What time is it...");
