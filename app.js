@@ -28,14 +28,24 @@ getWords = () => {
     }, 6000);
 };
 
-done = () => {
+const countdown = (num, callback) => {
+    setTimeout(() => {
+
+        if (num > 0) {
+            console.log(num);
+            countdown(num - 1, callback);
+        } else {
+            callback();
+        }
+    }, 1000);
+};
+
+const done = () => {
     console.log("Job's done!");
 }
 
-countdown = (num, callback) => {
 
-}
-
-stringMessage1("What time is it...");
-stringMessage2();
-getWords();
+// stringMessage1("What time is it...");
+// stringMessage2();
+// getWords();
+countdown(7, done);
