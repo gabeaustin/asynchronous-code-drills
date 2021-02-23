@@ -1,6 +1,5 @@
-stringMessage1 = (msg1) => {
-    console.log(msg1);
-};
+// Timing Out Assignment
+stringMessage1 = (msg1) => console.log(msg1);
 
 stringMessage2 = () => {
     setTimeout(() => {
@@ -28,6 +27,7 @@ getWords = () => {
     }, 6000);
 };
 
+// Callbacks and Recursion Assignment
 const countdown = (num, callback) => {
     setTimeout(() => {
 
@@ -45,7 +45,22 @@ const done = () => {
 }
 
 
-// stringMessage1("What time is it...");
-// stringMessage2();
-// getWords();
+stringMessage1("What time is it...");
+stringMessage2();
+getWords();
 countdown(7, done);
+
+// Promises Promises Assignment
+const lunchTime = true;
+const orderMeSomeFood = () => {
+    return new Promise((resolve, reject) => {
+        if(lunchTime === true) {
+            resolve({
+                lunch: "hamburger",
+                drink: "bottled water"
+            })
+        } else {
+            reject();
+        }
+    });
+};
